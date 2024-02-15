@@ -1,0 +1,26 @@
+MDScreen:
+    name:"login"
+    md_bg_color: rgba(0.57, 0.82, 0.96, 0.8)
+    MDFloatLayout:
+        Image:
+            source:"image/sign.png"
+            size_hint:(0.5,1)
+            pos_hint:({'x':0,'y':0})
+        MDFloatLayout:
+            canvas.before:
+                Color:
+                    rgba:1,1,1,1
+        MDTextField:
+            mode:"rectangle"
+            hint_text:"Username"
+            padding: ('10dp', '0dp', '0dp', '0dp')
+            pos_hint:({'x':.5,'y':.5})
+            size_hint_x:.2
+        MDTextField:
+            mode:"rectangle"
+            hint_text:"Password"
+            padding: ('0dp', '10dp', '0dp', '0dp')
+            pos_hint:({'x':.5,'y':.4})
+            size_hint_x:.2
+
+
